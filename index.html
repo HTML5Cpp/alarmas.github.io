@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALARMAS</title>
+
+    <link rel="stylesheet" href="CSS/estilos.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <section id="contenedorGeneral">
+        <aside id="ListadoEventos" class="Cajas">
+
+            <div class="Evento">
+                <div class="EventoHeader">
+                    <div class="CirculoColor"></div>
+                    <div class="Titulo TextosHeader">Leer</div>
+                    <div class="Horario TextosHeader">12:40p.m. - 01:20p.m.</div>
+                </div>
+                <div class="EventoFooter">
+                    <div class="DiasSemana">L</div>
+                    <div class="DiasSemana">M</div>
+                    <div class="DiasSemana">X</div>
+                    <div class="DiasSemana">J</div>
+                    <div class="DiasSemana">V</div>
+                    <div class="DiasSemana">S</div>
+                    <div class="DiasSemana">D</div>
+                    <div class="BotonEliminar"><i class='bx bxs-trash-alt'></i></div>
+                    
+                </div>
+            </div>
+
+        </aside>
+        <div id="EventoActivo" class="Cajas">
+            
+        </div>
+        <div id="HoraActual" class="Cajas">
+            <div class="HoraHeader">
+                <div id="HDia">Lunes</div>
+                <div id="HNoDia">00</div>
+                <div id="HMes">mES</div>
+                <div id="HYear">2024</div>
+            </div>
+            <div class="HoraCenter">
+                <div class="HoraP" id="horasMinutos">00 : 00</div>
+                <div class="MinimoP">
+                    <div class="SegundosP" id="seconduos">48</div>
+                    <div class="TiempoP" id="tiposHorita">p. m.</div>
+                </div>
+                
+            </div>
+            <div class="HoraFooter">
+
+            </div>
+        </div>
+        <article id="AgregarEvento" class="Cajas">
+            <div id="Formulario">
+                <div id="AcomodoFirst">
+                    <input type="text" id="fname" name="fname" placeholder="Nombre" autocomplete="off" >
+                
+                    <input type="color" id="colorcito" name="colorcito" value="#fca130">
+                    
+    
+                </div>
+               
+                <div id="AcomodoDias">
+                        <label class="checkBox">
+                          <input id="Lunes" type="checkbox" class="DiasForm" value="0">
+                          <div class="transition">L</div>
+                        </label>
+
+                        <label class="checkBox">
+                            <input id="Martes" type="checkbox" class="DiasForm" value="1">
+                            <div class="transition">M</div>
+                        </label>
+
+                        <label class="checkBox">
+                            <input id="Miercoles" type="checkbox" class="DiasForm" value="2">
+                            <div class="transition">X</div>
+                        </label>
+
+                        <label class="checkBox">
+                            <input id="Jueves" type="checkbox" class="DiasForm" value="3">
+                            <div class="transition">J</div>
+                        </label>
+
+                        <label class="checkBox">
+                            <input id="Viernes" type="checkbox" class="DiasForm" value="4">
+                            <div class="transition">V</div>
+                        </label>
+
+                        <label class="checkBox">
+                            <input id="Sabado" type="checkbox" class="DiasForm" value="5">
+                            <div class="transition">S</div>
+                        </label>
+
+                        <label class="checkBox">
+                            <input id="Domingo" type="checkbox" class="DiasForm" value="6">
+                            <div class="transition">D</div>
+                        </label>
+                      
+                </div>
+                <br>
+                <div id="AcomodoHoras">
+                    <input type="time" id="HoraInicio" name="HoraInicio" class="horas">
+                    <input type="time" id="HoraFinal" name="HoraFinal" class="horas">
+                </div>
+               
+                <br>
+                <button id="Guardado">SAVE</button>
+
+                <br>
+                <div id="advertencia"  class="ocultar">
+                    ¡falta algún dato!
+                </div>
+                
+              </div>
+        </article>
+    </section>
+    <script src="JS/compu.js"></script>
+</body>
+</html>
